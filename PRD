@@ -1,0 +1,138 @@
+ClarityFi – Product Requirements Document (Stakeholder Ready)
+Version 1.0 | June 2026 | Personal Finance / FinTech
+1. Executive Summary
+ClarityFi is a personal finance clarity platform designed for everyday consumers who generate abundant financial data but lack actionable insight. The product combines automated spend intelligence, smart expense splitting, and financial decision support into a single experience.
+2. Market Opportunity
+India has over 350M monthly UPI users. Consumers make dozens of transactions every month yet struggle to understand spending behavior, manage shared expenses, and evaluate financial products. Existing solutions address only fragments of the problem.
+3. Problem Statement
+Users are financially aware but financially blind. They know money leaves their accounts but cannot easily determine where it goes, whether they are overspending, or if financial decisions are optimal.
+4. Product Vision
+Help every user understand, manage, and act on their money with confidence through simple, transparent financial intelligence.
+5. Product Goals
+• Improve spending awareness
+• Reduce friction in shared expense management
+• Increase confidence in financial decisions
+• Create recurring engagement through personalized insights
+6. Success Metrics
+North Star Metric: Monthly Active Users who act on a financial insight.
+
+Supporting Metrics:
+• 60%+ users identify a new spending pattern
+• 40%+ Day-30 retention
+• 25%+ Day-90 retention
+• 35%+ users create split groups
+• NPS > 40
+7. User Personas
+Persona 1: Riya – Overwhelmed Earner
+Persona 2: Arjun – Reluctant Splitter
+Persona 3: Meera – Confused Decision Maker
+
+Each persona represents a distinct pain point around spending visibility, group expenses, and financial decision-making.
+8. Jobs To Be Done (JTBD)
+When I spend money every day, I want to know where it goes so that I can make better decisions.
+When I share expenses with others, I want settlements to happen automatically so that awkward conversations are avoided.
+When I evaluate an EMI or insurance plan, I want plain-language explanations so that I can choose confidently.
+9. User Research Insights
+Common themes:
+• Users underestimate discretionary spending.
+• Shared expense tracking is highly manual.
+• Financial products are perceived as confusing.
+• Users prefer automated solutions over manual bookkeeping.
+10. Product Scope (MVP)
+Feature 1: Spend Clarity Dashboard
+Feature 2: Smart Expense Splitter
+Feature 3: Financial Decision Explainer
+11. Detailed Feature Requirements
+Spend Dashboard:
+- SMS transaction parsing
+- Auto categorization
+- Trend analysis
+- Weekly and monthly insights
+
+Expense Splitter:
+- Group creation
+- Equal/custom splits
+- Settlement optimization
+- UPI payment initiation
+
+Decision Explainer:
+- EMI evaluator
+- Insurance evaluator
+- Hidden fee detection
+- Recommendation engine
+12. User Stories & Acceptance Criteria
+As a user, I want to see categorized spending so that I understand where my money goes.
+Acceptance: Transactions categorized automatically with >85% accuracy.
+
+As a user, I want to split expenses with friends so that balances are calculated automatically.
+Acceptance: System generates settlement recommendations.
+
+As a user, I want EMI offers explained clearly.
+Acceptance: System displays total cost and hidden charges.
+13. User Flows
+Onboarding → SMS Permission → Transaction Processing → Dashboard
+Dashboard → Insight → Spending Breakdown
+Split Group → Expense Entry → Settlement
+Decision Tool → Input Offer → Recommendation
+14. Information Architecture
+Home
+ ├─ Dashboard
+ ├─ Insights
+Split
+ ├─ Groups
+ ├─ Settlements
+Decide
+ ├─ EMI
+ ├─ Insurance
+Profile
+ ├─ Reports
+ ├─ Privacy
+ ├─ Settings
+15. Technical Architecture
+Frontend: React Native
+Backend: Node.js + PostgreSQL
+Authentication: Firebase OTP
+Analytics: Mixpanel
+Notifications: Firebase Cloud Messaging
+Payments: UPI Deep Links
+16. Data Privacy & Compliance
+• On-device SMS parsing
+• AES-256 encryption
+• TLS 1.3 data transmission
+• User-controlled data deletion
+• No sale of transaction data
+17. Analytics & Event Tracking
+Track:
+- Onboarding completion
+- SMS permission acceptance
+- Dashboard engagement
+- Split group creation
+- Settlement completion
+- EMI evaluations
+- Weekly active users
+18. Competitive Analysis
+Splitwise: Strong splitting, weak spend intelligence.
+CRED: Premium UX, limited financial visibility.
+Money View/Walnut: Tracking-focused, limited decision support.
+
+Differentiator: Unified spending, splitting, and decision intelligence.
+19. Risks & Mitigations
+Permission denial → Manual entry fallback
+Low retention → Insight-driven engagement
+Parsing failures → Continuous rule updates
+Trust concerns → Privacy-first architecture
+20. Launch Strategy
+Pilot launch with 200–500 users in Bengaluru and Pune.
+Measure activation, retention, and insight engagement.
+Iterate before wider rollout.
+21. Roadmap
+Phase 1: Dashboard + SMS Parsing + Splitter
+Phase 2: Decision Intelligence + UPI Settlements
+Phase 3: Account Aggregation + Family Finance
+Phase 4: Premium Analytics & Monetization
+22. Open Questions
+What accuracy threshold is required for launch?
+Should non-app users contribute to groups?
+What monetization model preserves trust?
+23. Appendix
+Glossary, assumptions, dependencies, future opportunities, and regulatory considerations.
